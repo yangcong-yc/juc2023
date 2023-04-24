@@ -17,12 +17,12 @@ public class JustTest {
 
     public static void main(String[] args) {
         T t = new T();
-//        System.err.println(ClassLayout.parseInstance(t).toPrintable());
-//        t.hashCode();
-//        System.err.println(ClassLayout.parseInstance(t).toPrintable());
-//        synchronized (t) {
-//            System.err.println(ClassLayout.parseInstance(t).toPrintable());
-//        }
+        System.err.println(ClassLayout.parseInstance(t).toPrintable());
+        t.hashCode();
+        System.err.println(ClassLayout.parseInstance(t).toPrintable());
+        synchronized (t) {
+            System.err.println(ClassLayout.parseInstance(t).toPrintable());
+        }
         System.err.println(ClassLayout.parseInstance(t).toPrintable());
     }
 
